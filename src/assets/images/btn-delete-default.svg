@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="100px" height="30px" viewBox="0 0 100 30" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <!-- Generator: sketchtool 52.6 (67491) - http://www.bohemiancoding.com/sketch -->
+    <title>600D35C7-ACFD-4320-B725-F4A5350F3E11</title>
+    <desc>Created with sketchtool.</desc>
+    <g id="page" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+        <g id="SPC_MyPara_Basic" transform="translate(-864.000000, -87.000000)">
+            <g id="body" transform="translate(240.000000, 0.000000)">
+                <g id="board">
+                    <g transform="translate(246.000000, 80.000000)">
+                        <g id="title">
+                            <g id="btn_delete_default" transform="translate(378.000000, 7.000000)">
+                                <rect id="bg_btn" fill="#F04C6B" x="0" y="0" width="100" height="30" rx="6"></rect>
+                                <text id="Delete" font-family="NotoSansCJKkr-Medium, Noto Sans CJK KR" font-size="14" font-weight="400" fill="#FFFFFF">
+                                    <tspan x="38.384" y="20">Delete</tspan>
+                                </text>
+                                <g id="IC/Contents/18px/ic_btn_delete" transform="translate(8.000000, 6.000000)">
+                                    <polygon id="Path" points="0 0 18 0 18 18 0 18"></polygon>
+                                    <path d="M4.5,14.25 C4.5,15.075 5.175,15.75 6,15.75 L12,15.75 C12.825,15.75 13.5,15.075 13.5,14.25 L13.5,5.25 L4.5,5.25 L4.5,14.25 Z M6.345,8.91 L7.4025,7.8525 L9,9.4425 L10.59,7.8525 L11.6475,8.91 L10.0575,10.5 L11.6475,12.09 L10.59,13.1475 L9,11.5575 L7.41,13.1475 L6.3525,12.09 L7.9425,10.5 L6.345,8.91 Z M11.625,3 L10.875,2.25 L7.125,2.25 L6.375,3 L3.75,3 L3.75,4.5 L14.25,4.5 L14.25,3 L11.625,3 Z" id="Shape" fill="#FFFFFF" fill-rule="nonzero"></path>
+                                    <polygon id="Path" fill-opacity="0.01" fill="#F2F2F2" opacity="0.5" points="0 0 18 0 18 18 0 18"></polygon>
+                                </g>
+                            </g>
+                        </g>
+                    </g>
+                </g>
+            </g>
+        </g>
+    </g>
+</svg>

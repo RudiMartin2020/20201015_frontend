@@ -1,0 +1,41 @@
+import spc from './spc/en.js'
+import mes from './mes/en.js'
+import eap from './eap/en.js'
+
+export default {
+  'TREE_001': 'All',
+  'TREE_002': 'Favorites',
+  'BUTTON_001': 'Add',
+  'BUTTON_002': 'Delete',
+  'BUTTON_003': 'Save',
+  'BUTTON_004': 'Control Limit Recal',
+  'BUTTON_005': 'CUSUM',
+  'BUTTON_006': 'EWMA',
+  'LABEL_001': 'My Para List',
+  'LABEL_002': 'Control Chart',
+  'gbnName': 'Category',
+  'specName': 'Parameter Name',
+  'lclVal': 'LCL',
+  'uclVal': 'UCL',
+  'avgVal': 'Average',
+  'stdVal': 'Standard Deviation',
+  'medianVal': 'Median',
+  'startDttm': 'Start DateTime',
+  'fnshDttm': 'End DateTime',
+  'calcDttm': 'Calculation DateTime',
+  'EngrSpecUseYN': 'Use Engr Spec',
+  'elclVal': 'Engr LCL',
+  'euclVal': 'Engr UCL',
+  'targetVal': 'Engr Target',
+  'chgUserId': 'User ID',
+  'chgDttm': 'Modified DateTime',
+  'specExpln': 'Engr Spec Comment',
+  'grpLvl1Name': 'FAB',
+  'grpLvl2Name': 'Tech',
+  'grpLvl3Name': 'Product',
+  'grpLvl4Name': 'Oper',
+  'grpLvl5Name': 'Eqp',
+  spc,
+  mes,
+  eap
+}

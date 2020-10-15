@@ -1,0 +1,12 @@
+.input-item {
+  display: flex;
+  align-items: center;
+  > .item-label {
+    color: $input-item-label;
+    margin-right: 10px;
+    white-space: nowrap;
+  }
+  > .unit {
+    padding: 0 5px;
+  }
+}

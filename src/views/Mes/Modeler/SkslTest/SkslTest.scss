@@ -1,0 +1,38 @@
+.sksl-test {
+  $property-width: 320px;
+  padding: $gap;
+  height: 100%;
+  position: absolute;
+  box-sizing: border-box;
+  .test-grid {
+    position: absolute;
+    height: calc(100% - #{$gap * 2});
+    width: calc(100% - #{$property-width} - #{$gap * 3});
+    overflow:hidden;
+    .header-search {
+      margin-left: 10px;
+      .input {
+        width: 200px;
+      }
+    }
+  }
+  .site-property {
+    overflow: hidden;
+    position: absolute;
+    height: calc(100% - #{$gap * 2});
+    right: $gap;
+    width: $property-width;
+    .field {
+      margin-bottom: $gap;
+    }
+  }
+  @media (max-width: $breakpoint-width)  {
+    $property-width : 300px;
+    .test-grid  {
+      width: calc(100% - #{$property-width} - #{$gap * 3});
+    }
+    .site-property {
+      width: $property-width
+    }
+  }
+}

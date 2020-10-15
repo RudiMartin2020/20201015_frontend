@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="295px" height="171px" viewBox="0 0 295 171" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <!-- Generator: Sketch 58 (84663) - https://sketch.com -->
+    <title>Rectangle</title>
+    <desc>Created with Sketch.</desc>
+    <defs>
+        <rect id="path-1" x="0" y="1" width="293" height="169"></rect>
+    </defs>
+    <g id="Page-1" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+        <g id="Rectangle" transform="translate(1.000000, 0.000000)">
+            <g id="Mask" stroke="#FFFFFF">
+                <polyline id="Path" points="292.333 169.716 0.167 169.716 0.167 0.784 292.333 0.784"></polyline>
+                <rect id="Rectangle" x="27.745" y="56.977" width="43.805" height="10.544"></rect>
+                <rect id="Rectangle" x="27.745" y="82.285" width="43.805" height="10.543"></rect>
+                <rect id="Rectangle" x="27.745" y="108.854" width="43.805" height="10.548"></rect>
+                <path d="M71.55,62.25 L91.825,62.25" id="Path" stroke-width="1.2309" stroke-linecap="round"></path>
+                <path d="M71.55,87.561 L91.825,87.561" id="Path" stroke-width="1.2309" stroke-linecap="round"></path>
+                <path d="M71.55,114.129 L91.825,114.129" id="Path" stroke-width="1.2309" stroke-linecap="round"></path>
+                <path d="M91.825,114.129 L116.77,88.192" id="Path"></path>
+                <path d="M91.825,88.192 L116.77,62.25" id="Path"></path>
+                <path d="M91.825,62.25 L116.77,88.192" id="Path"></path>
+                <path d="M116.77,88.192 L139.888,88.192" id="Path"></path>
+                <rect id="Rectangle" x="138.875" y="82.285" width="10.145" height="10.543"></rect>
+                <path d="M116.77,62.884 L139.888,62.884" id="Path"></path>
+                <rect id="Rectangle" x="138.875" y="56.977" width="10.145" height="10.544"></rect>
+                <path d="M191.944,54.208 L191.944,122.518" id="Path" stroke-linecap="round"></path>
+                <path d="M260.258,122.518 L191.944,122.518" id="Path" stroke-linecap="round"></path>
+                <path d="M201.637,88.366 L222.386,67.616" id="Path" stroke-linecap="round"></path>
+                <path d="M222.386,67.616 L231.045,76.276" id="Path" stroke-linecap="round"></path>
+                <path d="M231.045,76.276 L253.334,53.983" id="Path" stroke-linecap="round"></path>
+                <path d="M253.334,53.983 L242.192,53.983" id="Path" stroke-linecap="round"></path>
+                <path d="M253.334,53.983 L253.334,65.128" id="Path" stroke-linecap="round"></path>
+                <path d="M292.333,0.784 L292.333,169.716" id="Path"></path>
+            </g>
+            <mask id="mask-2" fill="white">
+                <use xlink:href="#path-1"></use>
+            </mask>
+            <use stroke="#FFFFFF" stroke-width="2" fill-opacity="0" fill="#D8D8D8" xlink:href="#path-1"></use>
+        </g>
+    </g>
+</svg>

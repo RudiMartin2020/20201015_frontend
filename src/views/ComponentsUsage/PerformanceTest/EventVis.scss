@@ -1,0 +1,175 @@
+@mixin eq-toggle () {
+  justify-content: center;
+  align-items: flex-start;
+  flex-wrap: wrap;
+  $colors: rgba(227, 65, 96, .8), rgba(32, 208, 191, .8), rgba(47, 141, 250, .8), rgba(248, 199, 83, .8), rgba(236, 126, 48, .8), rgba(26, 168, 121, .8), rgba(21, 83, 182, .8), rgba(189, 65, 227, .8), rgba(204, 145, 124, .8), rgba(81, 109, 136, .8);
+
+  @for $i from 1 through length($colors) {
+    $color: nth($colors, $i);
+    .control.-eqp-id-#{$i} {
+      .button.is-primary {
+        background-color: $color;
+        max-width: 150px;
+        word-break: break-all;
+        opacity: 1;
+      }
+      .button {
+        font-size: 11px;
+        opacity: .5;
+        &:hover {
+          opacity: 1;
+        }
+      }
+    }
+  }
+}
+.event-visualization {
+  padding: $gap;
+  height: 100%;
+  $option-width: 350px;
+  .modal-card {
+    &.-save-condition {
+      .field {
+        margin-bottom: $gap;
+      }
+    }
+  }
+  .visualization-panel {
+    height: 100%;
+    width: $option-width;
+    position: absolute;
+    right: $gap;
+    top: $gap;
+    .header-buttons {
+      .pie-timer {
+        margin-right: 10px;
+      }
+      .unit { margin-right: $gap; }
+    }
+    .panel-body {
+      position: relative;
+      height: 100%;
+      .body-chart {
+        position: relative;
+        width: calc(100% - #{$option-width});
+        height: 100%;
+        box-shadow: 1px 0 0 $c-line;
+        .chart-main {
+          height: 50%;
+          min-width: 600px;
+          min-height: 250px;
+        }
+        .chart-grid {
+          height: 50%;
+        }
+        .eq-toggle {
+          @include eq-toggle()
+        }
+      }
+      .body-options {
+        width: $option-width;
+        right: 0;
+        top: 0;
+        height: 100%;
+        position: absolute;
+        padding: $gap;
+        box-sizing: border-box;
+        .field[required=required] {
+          > .label {
+            color: #f40;
+          }
+        }
+        .b-tabs {
+          height: 100%;
+          position: relative;
+          .tab-content {
+            height: calc(100% - 36px - 51px);
+            overflow: auto;
+            padding-left: 0;
+            padding-right: 0;
+            .option-body.-xy-axis {
+              .-y-axis {
+                .axis-label {
+                  .label {
+                    background-color: #806C46;
+                    padding: 2px 8px;
+                    border-radius: 4px;
+                    display: inline-block;
+                  }
+                }
+              }
+              .-x-axis {
+                .axis-label {
+                  .label {
+                    background-color: #467280;
+                    padding: 2px 8px;
+                    border-radius: 4px;
+                    display: inline-block;
+                  }
+                }
+              }
+            }
+          }
+        }
+        .option-footer {
+          position: absolute;
+          bottom: 0;
+          width: $option-width - $gap * 2;
+          text-align: right;
+          padding-top: $gap;
+          border-top: 1px solid $c-line;
+          margin-bottom: $gap;
+        }
+        .option-item {
+          margin-bottom: $gap * 2;
+          .options-added {
+            .added-item {
+              display: flex;
+              padding: $gap-s;
+              justify-content: space-between;
+              align-items: center;
+              background-color: $input-background-color;
+              border-radius: $radius;
+              margin-top: 2px;
+            }
+          }
+          .period-detail {
+            padding: $gap-s 0;
+            margin-bottom: $gap;
+            .unit {
+              padding: 0 5px;
+              .icon { height: 32px; }
+            }
+          }
+        }
+      }
+    }
+  }
+  .vis-chart {
+    height: 35vh;
+    margin-right: $option-width + $gap;
+    .eq-toggle {
+      @include eq-toggle()
+    }
+  }
+  .vis-grid {
+    margin-top: $gap;
+    height: calc(100% - 35vh - #{$gap * 2});
+    margin-right: $option-width + $gap;
+    .header-content {
+      height: 100%;
+      .header-desc {
+        line-height: 30px;
+      }
+    }
+    .chart-grid {
+      height: 100%;
+    }
+  }
+  .selected-y:not(.wj-state-selected):not(.wj-state-multi-selected) {
+    background-color: #806C46 !important;
+  }
+  .selected-x:not(.wj-state-selected):not(.wj-state-multi-selected) {
+    background-color: #467280 !important;
+  }
+}

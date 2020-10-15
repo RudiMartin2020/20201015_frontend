@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="24px" height="24px" viewBox="0 0 24 24" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <!-- Generator: Sketch 59.1 (86144) - https://sketch.com -->
+    <title>Excel Import</title>
+    <desc>Created with Sketch.</desc>
+    <g id="Excel-Import" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+        <g id="file-excel" transform="translate(2.000000, 2.000000)" fill="#ffffff" fill-rule="nonzero">
+            <path d="M6,0 C4.8954305,0 4,0.8954305 4,2 L4,9 L6,9 C7.1045695,9 8,9.8954305 8,11 L8,16 C8,17.1045695 7.1045695,18 6,18 L4,18 L4,18 C4,19.1045695 4.8954305,20 6,20 L18,20 C19.1045695,20 20,19.1045695 20,18 L20,6 L14,0 L6,0 Z M17.8,18 L16,18 L14,14.6 L12,18 L10.2,18 L13.1,13.5 L10.2,9 L12,9 L14,12.4 L16,9 L17.8,9 L14.9,13.5 L17.8,18 M3,10 L6,13 L6,14 L3,17 L1.5,17 L4.5,14 L0,14 L0,13 L4.5,13 L1.5,10 L3,10 Z M13,1.5 L18.5,7 L13,7 L13,1.5 Z" id="Shape"></path>
+        </g>
+    </g>
+</svg>

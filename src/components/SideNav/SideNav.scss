@@ -1,0 +1,241 @@
+
+.side-nav {
+  $list-head-height: 56px;
+  $icon-size: 44px;
+  $width-d1: $nav-width-d1;
+
+  z-index: $z-side-nav;
+  position: fixed;
+  min-height: 100vh;
+  display: flex;
+  color: $c-text-invert;
+  transition: .3s ease-out width;
+  box-shadow: 0px 0 8px rgba(0, 0, 0, .2);
+  > .nav-d1 {
+    background-color: $nav-d1-bg;
+    width: $width-d1;
+    position: relative;
+    z-index: 5;
+    >.nav-item {
+      height: $width-d1;
+      display: block;
+      text-align: center;
+      padding-top: 12px;
+      cursor: pointer;
+      &.-more-org {
+        .item-icon {
+          background-image: $nav-icon-more-default;
+        }
+      }
+      &.-logo {
+        height: $list-head-height;
+        padding-top: 0;
+        .item-label {
+          display: block;
+          font-size: 0;
+          height: $list-head-height;
+          background: url('../../assets/images/skcnc-wh-4-x@2x.png') no-repeat center;
+          background-size: 51px 26px;
+          box-shadow: 0 1px 1px rgba(0, 0, 0, .1);
+        }
+      }
+      &.-more {
+        font-size: 0;
+        height: 70px;
+        .item-icon {
+          background: url('../../assets/images/ic-more.svg') no-repeat center;
+        }
+        .item-label {
+          font-size:0;
+        }
+        background-size: $icon-size;
+      }
+      &:hover {
+        color: $c-text-invert;
+        background-color: $nav-d1-bg-active; // #da1d58;
+        .item-icon {
+          color: $c-text;
+          background-color: $c-primary;
+        }
+      }
+      &.-is-active {
+        background-color: $nav-d1-bg-active; // #da1d58;
+        box-shadow: inset 2px 0 0 $nav-d1-border-active; // #fff;
+        .item-icon {
+          color: $c-text;
+          background-color: $c-primary;
+        }
+      }
+      .item-icon {
+        display: block;
+        margin: auto;
+        width: $icon-size;
+        height: $icon-size;
+        background-size: $icon-size;
+        background-repeat: no-repeat;
+        margin-bottom: 2px;
+        background-color: $c-nav-d1-icon-bg;
+        border-radius: $gap-s;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        color: $c-nav-d1-icon-color;
+      }
+      .item-label {
+        line-height: 18px;
+        font-size: 12px;
+        color: $c-text-invert;
+        white-space: nowrap;
+        overflow: hidden;
+        text-overflow: ellipsis;
+        display: block;
+        padding: 0 $gap-s;
+        text-align: center;
+      }
+    }
+  }
+  > .nav-d2 {
+    background-color: $nav-d2-bg; // #ec5c6d;
+    min-width: 250px;
+    position: relative;
+    z-index: 2;
+    transition: .3s ease-out transform;
+    overflow: auto;
+    height: 100vh;
+    .nav-d2-dimm {
+      position: fixed;
+      top: 0;
+      left: $width-d1;
+      width: calc(100vw - #{$width-d1});
+      height: 100vh;
+      background-color: transparent;
+      z-index: 1;
+    }
+    .sk-tree {
+      background-color: $nav-d2-bg;
+      position: relative;
+      padding-top: 10px;
+      z-index: 2;
+      height: calc(100% - 56px);
+      .tree-header {
+        display: none;
+      }
+    }
+    .nav-item {
+      min-height: 44px;
+      cursor: pointer;
+      .node-title {
+        display: flex;
+        align-items: center;
+        font-size: 14px;
+        padding-left: $gap-s;
+        padding-right: $gap;
+        opacity: .7;
+        line-height: 44px;
+        > .node-dash {
+          margin-top: 4px;
+        }
+        > .title-string {
+          > .side-nav-title {
+            display: flex;
+            align-items: center;
+            > * {
+              vertical-align: middle;
+            }
+          }
+        }
+        .open-in-new {
+          margin: 5px 0 0 5px;
+          &:hover {
+            color: $c-primary;
+          }
+        }
+      }
+      &.-is-family > .node-header {
+        .open-in-new {
+          display: none;
+        }
+      }
+      @for $level from 1 through 20 {
+        &.level-#{$level} {
+          background-color: darken($nav-d2-bg, $level * 2);
+        }
+      }
+      &.router-link-exact-active {
+        background-color: $nav-d2-bg-active; // rgba(255, 255, 255, .12);
+        .item-label {
+          opacity: 1;
+        }
+      }
+      &.-head {
+        background-color: $nav-d2-bg;
+        height: $list-head-height;
+        box-shadow: 0 1px 3px rgba(0, 0, 0, .15);
+        position: relative;
+        z-index: 3;
+        .title {
+          font-size: 20px;
+          padding-left: $gap;
+          line-height: $list-head-height;
+          color: $c-text-invert;
+        }
+        .collapse-toggle {
+          display: block;
+          background: url('../../assets/images/ic-arrow-left.svg') no-repeat center;
+          position: absolute;
+          width: 24px;
+          height: 24px;
+          top: 16px;
+          right: 14px;
+          cursor: pointer;
+        }
+      }
+      .node-header {
+        .header-body {
+          .tree-column {
+            border-bottom: 0;
+            padding-top: 0;
+            padding-bottom: 0;
+            &.bookmark .column-body {
+              height: 100%;
+              display: flex;
+              justify-content: flex-end;
+              align-items: center;
+              padding-right: $gap;
+              .icon {
+                color: $nav-bookmark-color !important;
+              }
+            }
+          } 
+        }
+      }
+    }
+  }
+  .nav-d3 {
+    background-color: darken($nav-d2-bg, 3%);
+    border-bottom: 1px solid (255, 255, 255, .1);
+    padding: 4px 0 8px 8px;
+    .nav-d3-item {
+      &:hover > .item-label {
+        color: $c-primary;
+      }
+      .item-label {
+        height: 36px;
+        line-height: 36px;
+        font-size: 12px;
+      }
+    }
+  }
+  &.-expanded-false {
+    width: $nav-width-d1;
+    > .nav-d1 {
+      min-width: 80px;
+    }
+    > .nav-d2 {
+      transform: translateX(-100%);
+      .nav-d2-dimm {
+        display: none;
+      }
+    }
+  }
+}

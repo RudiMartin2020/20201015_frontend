@@ -1,0 +1,145 @@
+$c-bg-block: #111111;
+$c-bg-base: #666666;
+
+$c-primary: #ff7a01;
+$c-primary-light: #e74143;
+$c-text: #fff;
+$c-text-light: rgba(255, 255, 255, .5);
+$c-text-invert: #fff;
+$c-line: rgba(100, 100, 100, 0.6);
+$c-line-dark: rgba(139, 176, 238, 0.1);
+$c-text-table-header: $brown-gray;
+$c-text-disabled: darken($c-text, 10%);
+
+$c-nav-d1-icon-bg: #2d2e31;
+$c-nav-d1-icon-color: #757982;
+
+$c-level-1: #f38;
+$c-level-2: #f80;
+$c-level-3: darken($c-text-table-header, 10%);
+
+$c-level-critical: #f38;
+$c-level-major: #f80;
+$c-level-minor: darken($c-text-table-header, 10%);
+$c-level-good: #7acb21;
+
+$primary: $c-primary;
+$primary-invert: $white;
+$dark: $gray-darken;
+$danger: $faded-red;
+$link: $c-text;
+$link-invert: $primary-invert;
+$link-hover: $primary;
+
+$list-item-color: $c-text;
+
+$label-color: $c-text;
+$input-background-color: rgba(0, 0, 0, .2);
+$input-color: $c-text;
+$input-bg-disabled: $gray-light;
+$input-disabled-background-color: rgba(255, 255, 255, .1);
+$input-border: rgba(152, 152, 162, .4);
+$input-border-hover: $primary;
+$input-item-label: darken($c-text, 20%);
+$input-placeholder-color: opacity($c-text);
+$input-hover-color: $primary;
+
+$dropdown-content-background-color: $c-text;
+$dropdown-item-active-background-color: transparent;
+$dropdown-item-active-outline: none;
+
+$btn-gray: $blue-gray;
+
+$button-disabled-background-color: $gray-lighter;
+$c-btn-dark: #45484c;
+
+$table-background-color: transparent;
+$table-color: $c-text;
+$table-header-bg: #2b2b2b;
+$table-header-bg-disabled: darken(#2b2b2b, 5%);
+$table-header-text-disabled: darken($c-text,40%);
+$table-header-text: #81a6e4;
+$table-body-bg: $c-bg-block;
+$table-border-dark: $c-bg-block;
+$table-border-light: $c-bg-block;
+$table-border-vertical: transparent;
+$table-detail-bg: $c-bg-block;
+$table-detail-shadow: inset 0 1px 1px #000;
+
+$table-cell-hover-bg: lighten($table-body-bg, 15%);
+$table-cell-bg-selected: lighten($table-body-bg, 20%);
+$table-cell-bg-modified: lighten($table-body-bg, 10%);
+
+$tabs-border-bottom-color: $c-line;
+$tabs-link-color: darken($c-text, 20%);
+
+$pagination-current-color: $c-bg-block;
+
+$pre-color: $c-text;
+$pre-bg: transparent;
+
+$modal-card-head-background-color: $c-bg-base;
+$modal-card-body-background-color: $c-bg-block;
+$modal-card-head-border-bottom: none;
+$modal-card-foot-border-top: none;
+$modal-card-title-color: $c-text;
+
+
+$nav-d1-bg: #111111;
+$nav-d1-bg-active: darken(#111111, 6%);
+$nav-d1-border-active: $white;
+$nav-d2-bg: #2b2b2b;
+$nav-d2-bg-active: rgba(255, 255, 255, .12);
+$nav-bookmark-color: #656565;
+
+$nav-icon-dashboard-default: url('../../assets/images/ic-dashboard-default-dark.svg');
+$nav-icon-dashboard-selected: url('../../assets/images/ic-dashboard-selected-dark.svg');
+$nav-icon-mes-default: url('../../assets/images/ic-mes-default-dark.svg');
+$nav-icon-mes-selected: url('../../assets/images/ic-mes-selected-dark.svg');
+$nav-icon-spc-default: url('../../assets/images/ic-spc-default-dark.svg');
+$nav-icon-spc-selected: url('../../assets/images/ic-spc-selected-dark.svg');
+$nav-icon-eap-default: url('../../assets/images/ic-eap-default-dark.svg');
+$nav-icon-eap-selected: url('../../assets/images/ic-eap-selected-dark.svg');
+$nav-icon-more-default: url('../../assets/images/ic-more-default-dark.svg');
+
+$wj-bkg: $c-bg-block;
+$wj-txt: $c-text;
+$wj-sel-bkg: $table-cell-bg-selected; // rgba(227, 65, 96, 0.5);
+$wj-sel-txt: $c-text;
+$wj-hdr-txt: $c-text-table-header;
+$wj-hdr-bkg: $table-header-bg;
+$wj-cell: $table-body-bg;
+// $wj-cell-alt: $table-body-bg;
+$wj-cell-alt: $c-line-dark;
+// $wj-cell-alt: darken($table-body-bg, 3%);
+$wj-msel-bkg: $table-cell-bg-selected; // rgba(227, 65, 96, .05);
+$wj-msel-txt: $c-text;
+$wj-btn-bkg: $btn-gray;
+$wj-btn-grd: $btn-gray;
+
+$wj-cell-selected-bg: $table-header-text;
+$wj-cell-selected-color: $c-bg-block;
+$wj-cell-new-bg: rgba(97, 166, 132, .3);
+$wj-cell-overlap-bg: rgba(166, 145, 97, .3);
+
+$wj-row-color-odd: lighten($c-bg-block, 10%);
+
+$wj-added-row-bg-from: rgba(97, 166, 132, 1);
+$wj-added-row-bg-to: rgba(97, 166, 132, .2);
+
+$wj-cell-bdr-color: $table-border-dark; // rgba(0, 0, 0, .05);
+$wj-cell-bdr-vrt: 1px solid $table-border-vertical; // rgba(0, 0, 0, 0);
+$wj-cell-bdr-hrz: 1px solid $table-border-dark; // rgba(0, 0, 0, .05);
+
+$wj-gauge-face-bg: transparent;
+$wj-gauge-face-stroke: rgba(255, 255, 255, .2);
+$wj-gauge-pointer-bg: rgba(255, 255, 255, .7);
+
+$wj-control-bg: #333333;
+
+$scrollbar-thumb-bg: #3c3c3c;
+
+//wj-dropdown-panel////
+.wj-dropdown-panel {
+  background-color: lighten($c-bg-block, 12%);
+}

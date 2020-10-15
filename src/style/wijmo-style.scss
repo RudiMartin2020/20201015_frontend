@@ -1,0 +1,153 @@
+
+@import "~@grapecity/wijmo.styles/wijmo-core";
+
+// enterprise modules
+@import "~@grapecity/wijmo.styles/parts/grid_sheet";
+@import "~@grapecity/wijmo.styles/parts/grid_multirow";
+@import "~@grapecity/wijmo.styles/parts/olap";
+@import "~@grapecity/wijmo.styles/parts/viewer";
+@import "~@grapecity/wijmo.styles/parts/chart_finance";
+
+@keyframes added-rows {
+  0%{ background-color: $wj-added-row-bg-from; }
+  100%{ background-color: $wj-added-row-bg-to; }
+}
+
+@keyframes point-selected {
+  0% {
+    stroke-width: 3px;
+    stroke-opacity: 0;
+  }
+  10% {
+    stroke-opacity: 1;
+  }
+  100% {
+    stroke-width: 25px;
+    stroke-opacity: 0;
+  }
+}
+
+.wj-content {
+  &.wj-flexgrid {
+    //border-width: 0 0 0 0;
+    border-radius: 0;
+    border-color: $wj-cell-bdr-color;
+    height: 100%;
+    .wj-cell {
+      // display: flex;
+      align-items: center;
+      padding: 6px;
+      .wj-right {
+        order: 999
+      }
+      &.wj-align-right {
+        text-align: right;
+        justify-content: flex-end;
+      }
+      &.wj-header {
+        display: block;
+        color: $c-text;
+        font-weight: 700;
+      }
+      &[aria-readonly="true"] {
+        color: $c-text-disabled;
+      }
+      &.-modified {
+        background-color: $table-cell-bg-modified; //rgba(227, 65, 96, .05);
+      }
+      &.-added-row {
+        background-color: $wj-added-row-bg-to;
+        animation: added-rows 3s ease-out 0s 1 normal;
+      }
+      &.wj-state-active {
+        border: 1px solid $primary;
+      }
+      &.wj-state-new {
+        background-color: $wj-cell-new-bg;
+      }
+      &.wj-state-overlap {
+      background-color: $wj-cell-overlap-bg;
+      }
+      &.cell-userReg{
+        background-color: #bbff00;
+        color: #0a0a0a;
+      }
+      &.cell-managed{
+        background-color: #5CD1E5;
+        color: #0a0a0a;
+      }
+      &.cell-unmanaged{
+        background-color: #A6A6A6;
+        color: #0a0a0a;
+      }
+      &.cell-noSpec{
+        background-color: #FFDF24;
+        color: #0a0a0a;
+      }
+      &.cell-outOfSpec{
+        background-color: #FF5E00;
+        color: #0a0a0a;
+      }
+      .wj-grid-editor {
+        display: block;
+        border: 1px solid $input-border;
+        box-shadow: inset 0 1px 2px rgba(10, 10, 10, 0.1);
+      }
+      .wj-btn + .wj-grid-editor {
+        display: inline;
+      }
+    }
+  }
+}
+
+.wj-flexchart {
+  margin-bottom: 0;
+  border: none;
+  height: 100%;
+  // max-height: 80vh;
+  .wj-label, .wj-data-label {
+    fill: $c-text;
+  }
+  .wj-header .wj-title,
+  .wj-footer .wj-title {
+    fill: $c-text;
+  }
+  .wj-label, .wj-data-label {
+    fill: $c-text;
+  }
+  .wj-axis-x .wj-line {
+    stroke: $c-line;
+  }
+  .wj-gridline {
+    stroke: $c-line-dark;
+  }
+  .wj-state-selected,
+  .wj-state-selected > * {
+    stroke: rgba(120, 160, 255, 0.8);
+    stroke-width: 10px;
+    z-index: 100;
+    // animation: 1s ease-out infinite point-selected;
+  }
+  .anno-text {
+    fill: $c-text;
+  }
+  .wj-cell-check {
+    margin-top: -5px;
+  }
+}
+
+.wj-gauge {
+  .wj-face path {
+    fill: $wj-gauge-face-bg;
+    stroke: $wj-gauge-face-stroke;
+  }
+  .wj-pointer {
+    fill: $wj-gauge-pointer-bg;
+  }
+}
+.wj-dropdown {
+  z-index: 5;
+}
+.wj-inputdatetime {
+  background:#303030;
+}

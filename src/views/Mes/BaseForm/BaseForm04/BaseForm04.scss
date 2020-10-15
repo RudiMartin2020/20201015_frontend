@@ -1,0 +1,101 @@
+.baseform04 {
+  padding: $gap;
+  height: 100%;
+  .lot-search {
+    padding: $gap;
+    margin-bottom: $gap;
+    .panel-body {
+      overflow:visible;
+    }
+    .search-options {
+      display: flex;
+      align-items: center;
+      flex-wrap: wrap;
+      .option-item {
+        display:flex;
+        align-items: center;
+        position:relative;
+        padding-left:80px;
+        width:20%;
+        &:first-child {
+          width:40%;
+        }
+        &:nth-child(n+5) {
+          margin-top: 10px;
+        }
+        .item-label {
+          position:absolute;
+          left: 0;
+          top: 50%;
+          margin-top:-9px;
+        }
+        .item-input {
+          display: flex;
+          align-items: center;
+          .select, select {
+            min-width: 130px;
+          }
+          .input {
+            width: 130px;
+          }
+          .unit {
+            display:inline-block;
+            margin:0 5px;
+          }
+          .datepicker {
+            .select, select {
+              min-width: auto;
+            }
+          }
+          .button {
+            margin-left: 5px;
+          }
+        }
+      }
+    }
+  }
+  .grid-btn-wrap {
+    display:flex;
+    justify-content: space-between;
+    margin-bottom: $gap;
+    height:162px;
+    .grid-wrap {
+      width: calc(100% - #{$gap} - 600px);
+      overflow: hidden;
+    }
+    .btn-grid {
+      width: 600px;
+      padding: 9px 13px;
+      .btn-wrap {
+        display:flex;
+        align-items:center;
+        flex-wrap: wrap;
+        .button {
+          margin:9px 5px;
+          height:auto;
+        }
+      }
+    }
+  }
+  .chart-grid-wrap {
+    height:calc(100% - 274px - #{$gap * 2});
+    display: flex;
+    justify-content: space-between;
+    .chart-grid {
+      width: calc(50% - #{$gap / 2});
+      .ctrl-area {
+        display: flex;
+        align-items: center;
+        padding:5px;
+        .button {
+          margin-right: 10px;
+        }
+      }
+      .chart-area {
+        padding:$gap;
+        height: 100%;
+      }
+    }
+  }
+  
+}

@@ -1,0 +1,98 @@
+.baseform {
+  padding: $gap;
+  height: 100%;
+  .lot-search {
+    margin-bottom:$gap;
+    .panel-body {
+      padding: $gap; 
+      display:flex;
+      justify-content: flex-start;
+      align-items: flex-start;
+      overflow:visible;
+    }
+    .option-title {
+      font-size:1.15rem;
+      margin-bottom:10px;
+      display:block;
+    }
+    .search-options {
+      display: flex;
+      flex-direction: column;
+      position:relative;
+      &.sel {
+        width:110px;
+        margin-right:$gap;
+        height:113px;
+        border-right:1px solid $c-line;
+        .b-radio {
+          margin:0 0 $gap 0;
+        }
+      }
+      &.period {
+        width:290px;
+        height:113px;
+        margin-right:$gap;
+        border-right:1px solid $c-line;
+        .option-item {
+          display:flex;
+          align-items:center;
+          margin-bottom: 10px;
+        }
+        .input {
+          width:120px;
+        }
+        .unit {
+          margin:0 5px;
+        }
+      } 
+    }
+    .search-condition {
+      width:calc(100% - 400px);
+      .search-options {
+        display:flex;
+        flex-direction: row;
+        flex-wrap: wrap;
+        align-items: center;
+        .option-item {
+          display:flex;
+          align-items: center;
+          position:relative;
+          padding-left:100px;
+          width:33.3%;
+          &:nth-child(n+3) {
+            margin-top: 10px;
+          }
+          .item-label {
+            position:absolute;
+            left: 0;
+            top: 50%;
+            margin-top:-9px;
+          }
+          .select, select {
+            min-width: 150px;
+          }
+        }
+      }
+    }
+  }
+  .data-list-grid {
+    padding:$gap;
+    margin-bottom:$gap;
+    .data-list {
+      display:flex;
+      align-items: center;
+      justify-content: space-between;
+      .item-txt {
+        color:$c-primary;
+      }
+      .unit {
+        display:inline-block;
+        margin-left:5px;
+      }
+    }
+  }
+  .grid-wrap {
+    overflow:hidden;
+    height:calc(100% - 208px - #{$gap * 2});
+  }
+}

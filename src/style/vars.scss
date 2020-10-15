@@ -1,0 +1,54 @@
+/// COLORS ///////////////////////////////////////////////
+$white: #fff;
+$faded-red: #e34160;
+$watermelon: #f05763;
+$blossom-pink: #ec5c6d;
+$pale-blue: #f1f3f6;
+$pale-gray: #f7f9fa;
+$slate: #525f78;
+$blue-gray: #858fa0;
+$brown-gray: #8d8d8d;
+
+$gray-darken: #262626;
+$gray-dark: #333;
+$gray-shaded: #4a4a4a;
+$gray: #666;
+$gray-light: #999;
+$gray-lighten: #ccc;
+$gray-lighter: #d8d8d8;
+$gray-lightest: #eee;
+
+$white-shade: #f2f2f2;
+
+$size-lnb: 240px;
+
+// SIDE NAV ////////////////////////////////////////////
+$nav-width-d1: 80px;
+$nav-width-d2: 240px;
+
+// for Buefy ///////////////////////////////////////////
+$gap: 18px;
+$gap-s: 7px;
+
+$radius-small: 4px;
+$radius: 4px;
+$radius-large: 4px;
+$size-6: 1.17rem;
+$size-5: 1.48rem;
+$size-4: 1.78rem;
+
+// ANIMATION ///////////////////////////////////////////
+$transition: all .2s ease-out;
+
+// ELEMENTS ////////////////////////////////////////////
+$bx-shadow-m: 0 2px 4px rgba(0, 0, 0, .1);
+
+// Z-INDEX /////////////////////////////////////////////
+$z-popover: 39;
+$z-side-nav: 30;
+$z-app-state: 25;
+// BORDER-RADIUS ///////////////////////////////////////
+
+// mediaQuery /////////////////////////////////////////
+$breakpoint-mid-width: 1500px;
+$breakpoint-width: 1320px;

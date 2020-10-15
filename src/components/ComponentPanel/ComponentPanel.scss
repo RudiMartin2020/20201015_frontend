@@ -1,0 +1,205 @@
+.component-panel {
+  background-color: $c-bg-block;
+  min-width: 150px;
+  display: flex;
+  flex-direction: column;
+  flex-wrap: wrap;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, .12);
+  border-radius: 12px;
+  transition: all .3s ease-out;
+  $color: str-slice(inspect($c-text), 2);
+  // margin: $gap;
+  position: relative;
+  border: 1px solid transparent;
+  &.selected{
+    border: 1px solid $c-primary;
+    overflow: hidden;
+  }
+  .panel-header {
+    flex: 0 1 auto;
+    box-sizing: border-box;
+    padding: 0 14px;
+    min-height: 45px;
+    font-weight: 500;
+    border-bottom: 1px solid $c-line;
+    position: relative;
+    width: 100%;
+    display: flex;
+    align-items: flex-start;
+    z-index:1;
+    .header-title {
+      flex: 1 1 auto;
+      display: block;
+      font-size: 16px;
+      line-height: 45px;
+      color: $c-text;
+      white-space: nowrap;
+      min-height: 45px;
+    }
+    .header-content {
+      flex: 1 0 auto;
+      display: flex;
+      flex-direction: column;
+      align-items: flex-end;
+      > * {
+        margin: 0 0 0 auto;
+        padding: $gap-s 0;
+      }
+      .header-buttons {
+        display: flex;
+        align-items: center;
+        .button {
+          @include miipButtons();
+          margin-left: 10px;
+          min-width: 40px;
+          // min-width: 80px;
+          // position:relative;
+        }
+        .divider {
+          width: 1px;
+          height: 20px;
+          background-color: $c-line;
+          display: block;
+          margin: 0 0 0 10px;
+        }
+        .control {
+          .button {
+            margin-left: 0;
+          }
+        }
+        .field.has-addons {
+          .control {
+            .select {
+              select {
+                border-radius:4px;
+              }
+            }
+            .input {
+              border-radius:4px;
+            }
+          }
+        }
+      }
+      .divider {
+        width: 1px;
+        height: 20px;
+        background-color: $c-line;
+        display: inline-block;
+        margin: 0 0 0 10px;
+      }
+      .button {
+        &[data-title]{
+          min-width:auto;
+          margin-left:8px;
+          &:hover{
+            &:before{
+              content: attr(data-title);
+              display: inline-block;
+              position: absolute;
+              bottom: -25px;
+              padding: 3px 5px;
+              border-radius: 3px;
+              background: #222;
+              color:  #fff;
+              font-size: 1rem;
+              white-space: nowrap;
+              z-index: 1;
+            }
+          }
+        }
+      }
+    }
+  }
+  .panel-body {
+    width: 100%;
+    position: relative;
+    flex-grow: 1;
+    flex-shrink: 1;
+    flex-basis: 50%;
+    overflow: auto;
+  }
+  .panel-footer {
+    height: 45px;
+    box-sizing: border-box;
+    padding: $gap-s 14px;
+    font-weight: 500;
+    border-top: 1px solid $c-line;
+    display: flex;
+    position: relative;
+    justify-content: flex-end;
+    align-items: center;
+  }
+  .panel-content {
+    padding: $gap - 4px;
+    position: relative;
+  }
+  .panel-divider-horizontal {
+    height: 2px;
+    display: block;
+    background-color: $c-line-dark; // $gray-lighter;
+  }
+  .header-button {
+    opacity: .6;
+    $size: 24px;
+    width: $size;
+    min-width: $size;
+    height: 45px;
+    margin-left: 10px;
+    background-size: $size;
+    &.-expand-panel {
+      background-image: url('data:image/svg+xml;utf8,<svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24"><path d="M0 0h24v24H0z" fill="none"/><path d="M7 14H5v5h5v-2H7v-3zm-2-4h2V7h3V5H5v5zm12 7h-3v2h5v-5h-2v3zM14 5v2h3v3h2V5h-5z" fill="%23#{$color}" /></svg>');
+      background-repeat: no-repeat;
+      background-position: center;
+    }
+    &.-pin-to-dashboard {
+      color: $c-text;
+      &.-pinned {
+        color: $primary;
+      }
+      &:hover,
+      &:active,
+      &:focus,
+      &.is-active {
+        background-color: transparent;
+        border: none;
+      }
+    }
+  }
+  &.-expanded {
+    position: fixed !important;
+    z-index: 30;
+    top: 45px + $gap;
+    width: calc(100vw - #{$gap * 2}) !important;
+    height: calc(100vh - 45px - #{$gap * 2}) !important;
+    overflow: auto;
+    padding-top: 0;
+    padding-left: 0;
+    margin-top: 0 !important;
+    margin-left: 0 !important;
+    margin-bottom: $gap;
+    .header-button.-expand-panel {
+      background-image: url('data:image/svg+xml;utf8,<svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24"><path d="M0 0h24v24H0z" fill="none"/><path d="M5 16h3v3h2v-5H5v2zm3-8H5v2h5V5H8v3zm6 11h2v-3h3v-2h-5v5zm2-11V5h-2v5h5V8h-3z" fill="%23#{$color}" /></svg>');
+    }
+  }
+}
+
+.app-main {
+  .component-panel.-expanded {
+    width: calc(100vw - #{$nav-width-d1} - #{$gap * 2}) !important;
+    left: $nav-width-d1 + $gap;
+  }
+  &.-side-nav-expanded-true .component-panel.-expanded {
+    width: calc(100vw - #{$nav-width-d1 + $nav-width-d2} - #{$gap * 2}) !important;
+    left: $nav-width-d1 + $nav-width-d2 + $gap;
+  }
+  @media (max-width: $breakpoint-width)  {
+    .panel-header {
+      padding:0 10px;
+      .header-title {
+        font-size:14px;
+      }
+    }
+  }
+}
+
+

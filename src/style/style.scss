@@ -1,0 +1,73 @@
+@import "~bulma/sass/utilities/_all";
+
+@import './vars.scss';
+@import './fonts.scss';
+@import './normalize.css';
+@import './browser-support.scss';
+// @import './fontawesome/font-awesome.scss';
+
+$theme: 'default'; // ['default', 'dark']
+@import './themes/dark.scss';
+@import './themes/day.scss';
+
+#app {
+  color: $c-text;
+  min-height: calc(100vh - 56px);
+  $app-state-height: 56px;
+}
+
+@import './mixins.scss';
+
+@import './input.scss';
+@import './layout.scss';
+@import '~bulma';
+@import '~buefy/src/scss/buefy';
+@import './buefy-override.scss';
+@import './wijmo-style.scss';
+
+html, body  {
+  background-color: $c-bg-base;
+  min-height: calc(100vh - 56px);
+  font-family: 'Noto Sans Korean', 'Apple SD Gothic Neo', Arial, Helvetica, sans-serif;
+  font-size: 12px;
+  *::-webkit-scrollbar {
+    width: 1em;
+    height: 1em;
+    background-color: $c-bg-block;
+  }
+
+  *::-webkit-scrollbar-track {
+    background-color: $c-bg-block;
+    border-radius: 1em;
+  }
+
+  *::-webkit-scrollbar-thumb {
+    background-color: $scrollbar-thumb-bg;
+    border-radius: 5px;
+  }
+
+  *::-webkit-scrollbar-corner {
+     background-color: $c-bg-block;
+  }
+
+  pre {
+    font-family: 'Consolas', 'Menlo', monospace;
+  }
+}
+
+
+
+.grids {
+  display: table;
+  position: relative;
+  width: 100%;
+  .grid {
+    display: table-cell;
+    vertical-align: top;
+    position: relative;
+    padding: $gap / 2;
+    &.is-2 {
+      width: 20%;
+    }
+  }
+}

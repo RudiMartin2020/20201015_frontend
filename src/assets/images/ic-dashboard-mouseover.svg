@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="44px" height="44px" viewBox="0 0 44 44" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <!-- Generator: sketchtool 52.6 (67491) - http://www.bohemiancoding.com/sketch -->
+    <title>55CD72AA-F6C1-45C0-B7BC-9CD62853168F</title>
+    <desc>Created with sketchtool.</desc>
+    <g id="Wireframe-Kit(PC)" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+        <g id="SideMenu" transform="translate(-865.000000, -228.000000)" fill="#FFFFFF">
+            <g id="sheet">
+                <g id="Depth1" transform="translate(32.000000, 120.000000)">
+                    <g id="Sode+Bittm" transform="translate(705.000000, 38.000000)">
+                        <g id="btn_MouseOver" transform="translate(110.000000, 60.000000)">
+                            <g id="ic_dashboard_mouseover" transform="translate(18.000000, 10.000000)">
+                                <rect id="highlight" fill-opacity="0.2" transform="translate(22.000000, 22.000000) scale(-1, 1) translate(-22.000000, -22.000000) " x="0" y="0" width="44" height="44" rx="8"></rect>
+                                <rect id="path" fill-opacity="0.01" opacity="0.5" transform="translate(22.000000, 22.000000) scale(-1, 1) translate(-22.000000, -22.000000) " x="2" y="2" width="40" height="40"></rect>
+                                <path d="M9,24 L9,31 L20,31 L20,24 L9,24 Z M21.25,22 C21.664225,22 22,22.3517643 22,22.7857143 L22,32.2142857 C22,32.6482357 21.664225,33 21.25,33 L7.75,33 C7.335775,33 7,32.6482357 7,32.2142857 L7,22.7857143 C7,22.3517643 7.335775,22 7.75,22 L21.25,22 Z M35,31 L35,24 L27,24 L27,31 L35,31 Z M37,32.2142857 C37,32.6482357 36.6162571,33 36.1428571,33 L25.8571429,33 C25.3837429,33 25,32.6482357 25,32.2142857 L25,22.7857143 C25,22.3517643 25.3837429,22 25.8571429,22 L36.1428571,22 C36.6162571,22 37,22.3517643 37,22.7857143 L37,32.2142857 Z M35,16 L35,13 L9,13 L9,16 L35,16 Z M36.2105263,18 L7.78947368,18 C7.35344737,18 7,17.6082625 7,17.125 L7,11.875 C7,11.3917375 7.35344737,11 7.78947368,11 L36.2105263,11 C36.6465526,11 37,11.3917375 37,11.875 L37,17.125 C37,17.6082625 36.6465526,18 36.2105263,18 Z" id="Fill-1" fill-rule="nonzero" opacity="0.5"></path>
+                            </g>
+                        </g>
+                    </g>
+                </g>
+            </g>
+        </g>
+    </g>
+</svg>

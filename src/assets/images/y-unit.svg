@@ -1,0 +1,36 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="28" height="121" viewBox="0 0 28 121">
+    <g fill="none" fill-rule="evenodd" transform="translate(0 -4)">
+        <rect width="4" height="1" x="24" y="120" fill="#4A4A4A" rx=".5"/>
+        <rect width="4" height="1" x="24" y="104" fill="#4A4A4A" rx=".5"/>
+        <rect width="4" height="1" x="24" y="88" fill="#4A4A4A" rx=".5"/>
+        <rect width="4" height="1" x="24" y="72" fill="#4A4A4A" rx=".5"/>
+        <rect width="4" height="1" x="24" y="56" fill="#4A4A4A" rx=".5"/>
+        <rect width="4" height="1" x="24" y="40" fill="#4A4A4A" rx=".5"/>
+        <rect width="4" height="1" x="24" y="24" fill="#4A4A4A" rx=".5"/>
+        <rect width="4" height="1" x="24" y="8" fill="#4A4A4A" rx=".5"/>
+        <text fill="#8D8D8D" font-family="NotoSansCJKkr-Regular, Noto Sans CJK KR" font-size="10">
+            <tspan x=".57" y="124">43.5</tspan>
+        </text>
+        <text fill="#8D8D8D" font-family="NotoSansCJKkr-Regular, Noto Sans CJK KR" font-size="10">
+            <tspan x="8.9" y="108">44 </tspan>
+        </text>
+        <text fill="#8D8D8D" font-family="NotoSansCJKkr-Regular, Noto Sans CJK KR" font-size="10">
+            <tspan x=".57" y="92">44.5</tspan>
+        </text>
+        <text fill="#8D8D8D" font-family="NotoSansCJKkr-Regular, Noto Sans CJK KR" font-size="10">
+            <tspan x="8.9" y="76">45</tspan>
+        </text>
+        <text fill="#8D8D8D" font-family="NotoSansCJKkr-Regular, Noto Sans CJK KR" font-size="10">
+            <tspan x=".57" y="60">45.5</tspan>
+        </text>
+        <text fill="#8D8D8D" font-family="NotoSansCJKkr-Regular, Noto Sans CJK KR" font-size="10">
+            <tspan x="8.9" y="44">46</tspan>
+        </text>
+        <text fill="#8D8D8D" font-family="NotoSansCJKkr-Regular, Noto Sans CJK KR" font-size="10">
+            <tspan x=".57" y="28">46.5</tspan>
+        </text>
+        <text fill="#8D8D8D" font-family="NotoSansCJKkr-Regular, Noto Sans CJK KR" font-size="10">
+            <tspan x="8.9" y="12">47</tspan>
+        </text>
+    </g>
+</svg>

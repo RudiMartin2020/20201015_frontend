@@ -1,0 +1,77 @@
+.baseform09 {
+  padding: $gap;
+  height: 100%;
+  $search-width: 300px;
+  .spec-grid-wrap {
+    display:flex;
+    justify-content: space-between;
+    height:40%;
+    margin-bottom: $gap;
+    .spec-grid {
+      width: $search-width;
+      overflow:hidden;
+      .mode-area {
+       padding: 1em ;
+       border-bottom:1px solid $c-line;
+       display:flex;
+       align-items:center;
+       .item-label {
+        width:60px;
+       }
+       .b-radio {
+         width:25%;
+         margin:0;
+         &:nth-child(n+4) {
+           margin-top:5px;
+         }
+       }
+      }
+      .search-options {
+        padding: 1em;
+        .option-item {
+          display:flex;
+          align-items:center;
+          margin-bottom:5px;
+          &:last-child {
+            margin-bottom:0;
+          }
+        }
+        .item-label {
+          display:inline-block;
+          width:100px;
+        }
+        .item-input {
+          display:flex;
+          align-items:center;
+          width:calc(100% - 100px);
+          &.sm {
+            .control {
+              width:calc(100% - 55px);
+              margin-right:5px;
+            }
+          }
+        }
+        .control, .select, select, .input {
+          width:100%;
+        }
+      }
+    }
+    .data-tab-grid {
+      width:calc(100% - #{$search-width} - #{$gap});
+      overflow:hidden;
+      .b-tabs {
+        height:100%;
+      }
+      .tab-content {
+        height:calc(100% - 37px);
+        padding:0;
+      }
+      .tab-item {
+        height: 100%;
+      }
+    }
+  }
+  .canvas-grid {
+    height:calc(60% - #{$gap});
+  }
+}

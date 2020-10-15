@@ -1,0 +1,8 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="100" height="30" viewBox="0 0 100 30">
+    <g fill="none" fill-rule="evenodd">
+        <rect width="100" height="30" fill="#525F78" rx="6"/>
+        <text fill="#FFF" font-family="NotoSansCJKkr-Medium, Noto Sans CJK KR" font-size="14" font-weight="400">
+            <tspan x="25.15" y="20">CUSUM</tspan>
+        </text>
+    </g>
+</svg>

@@ -1,0 +1,55 @@
+@mixin button($size: 'M', $bg-color: $c-base) {
+  $padding: 0 15px; $tx-size: 15px; $line-height: 30px; $color: $c-text-light;
+
+  @if $size == 'XS' { $line-height: 20px; $tx-size: 12px; $padding: 0 10px; }
+  @if $size == 'S' { $line-height: 30px; $tx-size: 14px; $padding: 0 11px; }
+  @if $size == 'L' { $line-height: 36px; }
+  @if $size == 'XL' { $line-height: 48px; min-width: 100px; }
+  @if $bg-color == $c-bg-light {
+    border: 1px solid $c-line; $color: $c-text-gray;
+    &:hover { background-color: $gray-lightest; }
+  }
+  @if $bg-color == $c-point {
+    border-color: $c-point;
+    &:hover { background-color: $c-point-dark; }
+  }
+
+  box-sizing: border-box; padding: $padding; font-size: $tx-size; line-height: $line-height; background-color: $bg-color; color: $color; display: inline-block; cursor: pointer; border-radius: 3px; text-align: center; vertical-align: middle;
+
+  &[disabled=disabled] {
+    opacity: .3; cursor: default;
+  }
+}
+
+@mixin miipButtons () {
+  > span {
+    display: flex;
+    align-items: center;
+    flex-wrap: nowrap;
+  }
+  .button-label {
+    min-width: 62px;
+    display: block;
+  }
+}
+
+@mixin form-list () {
+  > .list-item {
+    padding: $gap-s 0;
+    border-bottom: none;
+    .field {
+      .field-label {
+        max-width: 200px;
+      }
+      .field-body {
+        justify-content: flex-start;
+        > .field {
+          flex-grow: 0;
+          &:last-of-type {
+            flex-grow: 1;
+          }
+        }
+      }
+    }
+  }
+}

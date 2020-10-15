@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="44px" height="44px" viewBox="0 0 44 44" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <!-- Generator: sketchtool 52.6 (67491) - http://www.bohemiancoding.com/sketch -->
+    <title>89B0CAEB-973A-49D2-95BA-C1381D675C74</title>
+    <desc>Created with sketchtool.</desc>
+    <g id="Wireframe-Kit(PC)" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+        <g id="SideMenu" transform="translate(-975.000000, -338.000000)">
+            <g id="sheet">
+                <g id="Depth1" transform="translate(32.000000, 120.000000)">
+                    <g id="Sode+Bittm" transform="translate(705.000000, 38.000000)">
+                        <g id="btn_Selected" transform="translate(220.000000, 170.000000)">
+                            <g id="btn">
+                                <g id="ic_add_selected" transform="translate(18.000000, 10.000000)">
+                                    <polygon id="Path" fill="#E34160" fill-rule="nonzero" points="8 8 36 8 36 36 8 36"></polygon>
+                                    <path d="M36,0 C40.418278,8.11624501e-16 44,3.581722 44,8 L44,36 C44,40.418278 40.418278,44 36,44 L8,44 C3.581722,44 0,40.418278 0,36 L0,8 C0,3.581722 3.581722,-8.11624501e-16 8,0 L36,0 Z M24,20 L24,13 C24,12.4477153 23.5522847,12 23,12 L21,12 C20.4477153,12 20,12.4477153 20,13 L20,20 L13,20 C12.4477153,20 12,20.4477153 12,21 L12,23 C12,23.5522847 12.4477153,24 13,24 L20,24 L20,31 C20,31.5522847 20.4477153,32 21,32 L23,32 C23.5522847,32 24,31.5522847 24,31 L24,24 L31,24 C31.5522847,24 32,23.5522847 32,23 L32,21 C32,20.4477153 31.5522847,20 31,20 L24,20 Z" id="Combined-Shape" fill="#FFFFFF"></path>
+                                </g>
+                            </g>
+                        </g>
+                    </g>
+                </g>
+            </g>
+        </g>
+    </g>
+</svg>

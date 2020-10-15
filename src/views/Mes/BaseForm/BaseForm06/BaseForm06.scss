@@ -1,0 +1,195 @@
+.baseform06 {
+  padding: $gap;
+  height: 100%;
+  $search-width: 300px;
+  display:flex;
+  justify-content: space-between;
+  .search-grid {
+    width:$search-width;
+    overflow:hidden;
+    .cond-wrap {
+      ul {
+        padding: $gap;
+      }
+      .item-list {
+        display:flex;
+        align-items:center;
+        margin-top:10px;
+        &:first-child {
+          margin-top:0;
+        }
+        .item-label {
+          display:inline-block;
+          width:65px;
+        }
+        .item-input {
+          display:flex;
+          align-items:center;
+          .input {
+            width:80px;
+            margin-right:5px;
+          }
+          .b-radio {
+            margin-right:10px;
+          }
+        }
+      }
+    }
+    .grid-wrap {
+      height:calc(100% - 250px);
+      position:relative;
+    }
+    .icon-area {
+      padding: calc(#{$gap} - 5px) $gap;
+      border-top:1px solid $c-line;
+      ul {
+        display:flex;
+        flex-wrap: wrap;
+        li {
+          width:50%;
+          margin:5px 0;
+          display:flex;
+          align-items: center;
+          .icon-label {
+            display:inline-block;
+            margin-left:10px;
+            line-height:25px;
+          }
+          &.complete {
+            .icon {
+              color:$c-level-good;
+            }
+          }
+          &.critical {
+            .icon {
+              color:$c-level-critical;
+            }
+          } 
+          &.hold {
+            .icon {
+              color:$c-primary;
+            }
+          }
+        }
+      }
+    }
+  }
+  .result-grid {
+    width:calc(100% - #{$search-width} - #{$gap});
+    overflow:hidden;
+    .lot-search {
+      padding: $gap;
+      margin-bottom: $gap;
+      .search-options {
+        display: flex;
+        justify-content: space-between;
+        .option-item {
+          height:32px;
+          display:flex;
+          align-items:center;
+        }
+        .item-label {
+          display:inline-block;
+          margin-right:10px;
+          line-height:31px;
+        }
+        .input {
+          width:80px;
+        }
+      }
+    }
+    .chart-grid {
+      height:calc(50% - 70px - #{$gap});
+      overflow: hidden;
+      margin-bottom:$gap;
+      .header-buttons {
+        display:flex;
+        .item-label {
+          display: inline-block;
+          margin-right:10px;
+        }
+        .item-input {
+          display: flex;
+          align-items: center;
+          .input {
+            width:50px;
+          }
+          .unit {
+            display:inline-block;
+            margin:0 5px;
+          }
+        }
+      }
+      .chart-area {
+        height:100%;
+        padding: $gap;
+      }
+    }
+    .grid-input-wrap {
+      height:calc(50% - #{$gap});
+      overflow:hidden;
+      .-expand-panel {
+        display:none;
+      }
+      .header-buttons {
+        display:flex;
+        .b-checkbox {
+          margin-right:10px;
+        }
+        .item-input {
+          display:flex;
+          align-items: center;
+          .input {
+            width:80px;
+          }
+          .button {
+            margin-right: 10px;
+          }
+        }
+      }
+      .grid-input {
+        display:flex;
+        position:relative;
+        padding: 46px $gap $gap;
+        justify-content: space-between;
+        height:100%;
+        align-items: center;
+        .grid-title {
+          position:absolute;
+          font-size:1.17rem;
+          left: $gap;
+          top: $gap;
+        }
+        .input-list {
+          width:162px;
+          li{
+            margin-bottom:10px;
+          }
+          .item-label {
+            display:block;
+            text-align: center;
+            margin-bottom: 5px;
+          }
+          .item-input.sm {
+            display:flex;
+            align-items: center;
+            justify-content: space-between;
+            .input {
+              width:130px;
+            }
+          }
+        }
+        .grid-wrap {         
+          width: calc(100% - 162px - #{$gap * 2});
+          height: 100%;
+          border:1px solid rgba(172, 172, 172, 0.4);
+          border-radius: 12px;
+          overflow:hidden;
+          .-expand-panel {
+            display:inline-block;
+          }
+        }
+      }
+    }
+  }
+}

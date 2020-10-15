@@ -1,0 +1,33 @@
+body	{
+	font-family: sans-serif;
+	font-smooth: always;
+	-webkit-font-smoothing: antialiased;
+
+	// font-family: -apple-system, BlinkMacSystemFont, Helvetica, Roboto, Arial, sans-serif;
+	font-family: -apple-system, BlinkMacSystemFont, 'Noto Sans Korean', sans-serif;
+	font-size: 14px; line-height: 20px;
+}
+
+ul, ol, dl, li, dt, dd	{
+	margin: 0; padding: 0; list-style: none;
+}
+
+h1, h2, h3, h4 {
+	margin: 0; padding: 0;
+}
+
+a	{
+	text-align: left; border-radius: 0; font-weight: inherit;
+	&:link,
+	&:visited,
+	&:hover,
+	&:active	{ text-decoration: none; color: $c-text; }
+}
+
+button	{
+	border-width: 0; padding: 0; background-color: transparent; outline: none;
+}
+
+input, select {
+	outline: none;
+}

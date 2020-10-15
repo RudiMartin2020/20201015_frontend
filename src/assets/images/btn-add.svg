@@ -1,0 +1,10 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="100" height="30" viewBox="0 0 100 30">
+    <g fill="none" fill-rule="evenodd">
+        <rect width="100" height="30" fill="#858FA0" rx="6"/>
+        <path fill="#F2F2F2" fill-opacity=".01" d="M8 6h18v18H8z" opacity=".5"/>
+        <path fill="#FFF" d="M23 15.857h-5.143V21h-1.714v-5.143H11v-1.714h5.143V9h1.714v5.143H23z"/>
+        <text fill="#FFF" font-family="NotoSansCJKkr-Medium, Noto Sans CJK KR" font-size="14" font-weight="400">
+            <tspan x="46.326" y="20">Add</tspan>
+        </text>
+    </g>
+</svg>

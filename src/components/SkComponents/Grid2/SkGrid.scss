@@ -1,0 +1,95 @@
+.sk-wijmo-grid {
+  display: flex;
+  height: 100%;
+  max-height: 100%;
+  margin: 0;
+  padding: 0;
+  .wj-flexgrid:not(.wj-state-focused) .wj-cells .wj-row[aria-selected=true] .wj-cell,
+  .wj-flexgrid {
+    .wj-cell {
+      border-width: 0 0 1px 0;
+      border-style: solid;
+      border-color: $wj-row-color-odd;
+      .-vertical-center {
+        position: relative;
+        top: 50%;
+        transform: translateY(-50%);
+        white-space: pre-wrap;
+        padding-right: 20px;
+      }
+      .-horizontal-center {
+        text-align: center;
+      }
+      &.-focused-row {
+        box-shadow: inset 0 20px 50px rgba(0, 128, 255, .1);
+      }
+      &.wj-header {
+        &.header-required {
+          &:before {
+            content: '*';
+            color: #ffffff;
+          }
+        }
+      }
+      // multi combo css
+      &.wj-align-center {
+        justify-content: center;
+      }
+    }
+    .wj-cells {
+      .wj-row[aria-selected=true] {
+        .wj-cell:not(.wj-state-selected) {
+          background: $wj-cell-selected-bg;
+          color: $wj-cell-selected-color;
+        }
+      }
+    }
+  }
+  .pagination {
+    width: 90%
+  }
+}
+
+// customize picker css
+#ui-datepicker-div.ui-datepicker{
+  z-index: 100 !important;
+}
+
+.sk-grid-datetimepicker {
+  background: $c-bg-block;
+  color: $input-color;
+  border: 0;
+  padding: 0 $gap-s;
+}
+
+// context menu
+.wj-menu-items {
+  background-color: #1C2340;
+  .wj-listbox-item {
+    width: 100px;
+  }
+}
+
+.wj-control.sk-ms-picker {
+  .picker-control {
+    padding: $gap;
+  }
+  .picker-buttons {
+    padding: 0 $gap $gap $gap;
+  }
+}
+.wj-dropdown-panel {
+  .wj-control {
+    background:transparent;
+    .wj-listbox-item {
+      margin:5px 0;
+      span {
+        position:relative;
+        top:-2px;
+      }
+    }
+    .wj-listbox {
+      max-width:none;
+    }
+  } 
+}

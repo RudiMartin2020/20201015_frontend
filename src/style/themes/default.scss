@@ -1,0 +1,79 @@
+$c-bg-block: $white;
+$c-bg-base: $pale-blue;
+
+$c-primary: $watermelon;
+$c-primary-light: $faded-red;
+$c-text: $gray-dark;
+$c-text-light: $gray;
+$c-text-invert: $white;
+$c-line: $gray-lightest;
+$c-line-dark: $gray-lighten;
+$c-text-table-header: $brown-gray;
+
+$primary: $c-primary;
+$primary-invert: $white;
+$dark: $slate;
+$danger: $faded-red;
+$link: $c-text;
+$link-invert: $primary-invert;
+
+$label-color: $c-text;
+$input-background-color: $c-bg-block;
+$input-color: $c-text;
+$input-bg-disabled: $gray-light;
+$input-disabled-background-color: $gray-light;
+$input-border: $gray-lighten;
+$input-border-hover: $primary;
+$input-item-label: darken($c-text, 20%);
+$input-placeholder-color: opacity($c-text);
+
+$btn-gray: $blue-gray;
+
+$button-disabled-background-color: $gray-lighter;
+
+$table-background-color: transparent;
+$table-color: $c-text;
+$table-header-bg: $pale-gray;
+$table-header-text: $c-text-table-header;
+$table-body-bg: $c-bg-block;
+$table-border-dark: $gray-lightest;
+$table-border-light: $white-shade;
+$table-border-vertical: transparent;
+
+$table-cell-hover-bg: lighten($primary, 15%);
+$table-cell-bg-selected: lighten($primary, 15%);
+$table-cell-bg-modified: lighten($primary, 33%);
+
+$tabs-border-bottom-color: $c-line;
+$tabs-link-color: darken($c-text, 20%);
+
+$nav-d1-bg: $c-primary-light;
+$nav-d1-bg-active: darken($c-primary-light, 6%);
+$nav-d1-border-active: $white;
+$nav-d2-bg: $blossom-pink;
+$nav-d2-bg-active: rgba(255, 255, 255, .12);
+
+$nav-icon-dashboard-default: url('../../assets/images/ic-dashboard-default.svg');
+$nav-icon-dashboard-selected: url('../../assets/images/ic-dashboard-selected.svg');
+$nav-icon-mes-default: url('../../assets/images/ic-mes-default.svg');
+$nav-icon-mes-selected: url('../../assets/images/ic-mes-selected.svg');
+$nav-icon-spc-default: url('../../assets/images/ic-spc-default.svg');
+$nav-icon-spc-selected: url('../../assets/images/ic-spc-selected.svg');
+$nav-icon-eap-default: url('../../assets/images/ic-eap-default.svg');
+$nav-icon-eap-selected: url('../../assets/images/ic-eap-selected.svg');
+$nav-icon-more-default: url('../../assets/images/ic-more-default.svg');
+
+$wj-bkg: $c-bg-block;
+$wj-txt: $c-text;
+$wj-sel-bkg: $table-cell-bg-selected; // rgba(227, 65, 96, 0.5);
+$wj-sel-txt: $c-text;
+$wj-hdr-txt: $c-text-table-header;
+$wj-hdr-bkg: $table-header-bg;
+$wj-cell: $table-body-bg;
+$wj-cell-alt: #151936;
+$wj-msel-bkg: $table-cell-bg-selected; // rgba(227, 65, 96, .05);
+$wj-msel-txt: $c-text;
+
+$wj-cell-bdr-color: $table-border-dark; // rgba(0, 0, 0, .05);
+$wj-cell-bdr-vrt: 1px solid $table-border-vertical; // rgba(0, 0, 0, 0);
+$wj-cell-bdr-hrz: 1px solid $table-border-dark; // rgba(0, 0, 0, .05);
